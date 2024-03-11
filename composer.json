@@ -1,0 +1,32 @@
+{
+    "name": "bluestone/larametrics",
+    "description": "Show phpmetrics report of your app on cli",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bluestone\\Larametrics\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "William",
+            "email": "william@suppo.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmetrics/phpmetrics": "^2.8",
+        "laravel/prompts": "^0.1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.21"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bluestone\\Larametrics\\LarametricsServiceProvider"
+            ]
+        }
+    }
+}
